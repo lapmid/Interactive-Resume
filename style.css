@@ -1,0 +1,76 @@
+body{
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+
+#background{
+	position: relative;
+	background: #00fdff url(img/back3.jpg);
+	height: 100vh;
+	background-size: cover;
+	background-position: 0 0;
+	background-repeat: repeat-x;
+	/*animation: animate 15s  linear infinite;*/
+	
+}
+#me{
+	background: url(img/me.png);
+	position: fixed;
+	width: 58px;
+	height: 87px;
+	bottom: 17%;
+	left: 40px;
+	
+
+	/*animation: bounce 1.5s steps(2) infinite;*/
+}
+
+
+.bounce{
+	animation: bounce 0.7s steps(2);
+}
+@keyframes animate2{
+	from{
+		background-position: 0px;
+	}to{
+		background-position: -464px;
+	}
+}
+
+@keyframes bounce{
+	0%{
+		transform: translateY(0);
+		background-position: 0px;
+	}
+	50%{
+		transform: translateY(-40px);
+		background-position: -232px;
+	}
+
+	100%{
+		transform: translateY(0px);
+		background-position: -464px;
+	}
+}
+
+@keyframes animate{
+	from{
+		background-position: 0px 0;
+	}to{
+		background-position: 100% 0;
+	}
+}
+
+
+
+
+#words{
+	text-align: center;
+	position: fixed;
+	color: #899ae9;
+	padding: auto;
+	margin: auto;
+	display: inline-flex;
+}
